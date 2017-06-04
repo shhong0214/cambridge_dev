@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<title>CAMBRIDGE MEMBERS</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script type='text/javascript' src="../js/gambit-smoothscroll-min.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+	<body>
+		<header id="cmHead" class="white"><!-- class="white" 추가 흰색 gnb -->
+			<div class="inner">
+				<h1><a href="../index.html" class="link_site">Cambridge Members</a></h1>
+				<nav id="cmGnb">
+					<h2 class="screen_out">주메뉴</h2>
+					<ul class="gnb_comm">
+						<li><a href="../index.html" class="link_cont">Event</a></li>
+						<li><a href="../index.html#1" class="link_cont">Collection</a></li>
+						<li><a href="../index.html#2" class="link_cont">Brand History</a></li>
+						<li><a href="../index.html#3" class="link_cont">MTM</a></li>
+						<li><a href="../index.html#4" class="link_cont">Shop Info.</a></li>
+						<li><a href="../index.html#5" class="link_cont">Customer Service</a></li>
+					</ul>
+				</nav>
+				<div class="menu-btn">
+					<a href="javascript:void(0)" class="btn-open"></a>
+				</div>
+			</div>
+		</header>
+		<main id="cmContents">
+			<h2 class="screen_out">메인 컨텐츠</h2>
+			<article id="mArticle">
+				<section class="shopContain">
+					<h3>STORE INFO.</h3>
+					<dl class="find_opt">
+						<dt>
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</dt>
+						<dd>
+							<input type="search" class="inp_search" placeholder="매장 이름 또는 지역을 입력해 주세요."><button type="button" class="btn_search"><span class="ico_comm">검색</span></button>
+						</dd>
+					</dl>
+					<div class="shopListWrap">
+						<ul class="type">
+							<li><a href="#n">전체(83)</a></li>
+							<li><a href="#n">백화점(65)</a></li>
+							<li><a href="#n">직영점(2)</a></li>
+							<li><a href="#n">할인점(0)</a></li>
+							<li><a href="#n">온라인(1)</a></li>
+							<li><a href="#n">쇼핑몰(13)</a></li>
+							<li><a href="#n">특약점(2)</a></li>
+						</ul>
+						<div class="borad">
+							<div class="no_result">
+								<p>검색된 결과가 없습니다.</p>
+								<span>"캠브리지"에 대해 총 0건이 검색되었습니다.</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</article>
+		</main>
+	</body>
+</html>
+<script type="text/javascript">
+var w=parseInt($(window).width());
+$(document).ready(function(){
+	resizeHandler();
+	openHandler();
+	$(window).scroll(function(){
+		scrollHandler();
+	});
+	$(window).resize(function(){
+		resizeHandler();
+	});
+
+	function openHandler(){
+		$(".btn-open").unbind();
+		$(".btn-open").bind("click",function(e){
+			$(this).removeClass("btn-open").addClass("btn-close");
+			$("#cmGnb").css({'display':'block','backgroundColor':"#fff"});
+			$("#cmHead").css({'overflow':'visible'});
+			closeHandler();
+		});
+	}
+
+	function closeHandler(){
+		$(".btn-close").unbind();
+		$(".btn-close").bind("click",function(e){
+			$(this).removeClass("btn-close").addClass("btn-open");
+			$("#cmGnb").css({'display':'none'});
+			$("#cmHead").css({'overflow':'hidden'});
+			openHandler();
+		});
+	}
+
+	function resizeHandler(){
+		w=parseInt($(window).width());
+		if(w>700){
+			if($(".menu-btn").find("a").hasClass("btn-open")){
+				$(".menu-btn").find("a").removeClass("btn-open").addClass("btn-close");
+				closeHandler();
+				$(".gnb_comm li a").css({"color":"#000"});
+			}
+			$("#cmGnb").css({"display":"block"});
+			$("#cmHead").css({'overflow':'visible'});
+		}else{
+			if($(".menu-btn").find("a").hasClass("btn-close")){
+				$(".menu-btn").find("a").removeClass("btn-close").addClass("btn-open");	
+				openHandler();
+			}
+			$("#cmGnb").css({"display":"none"});
+			$("#cmHead").css({'overflow':'hidden'});
+		}
+	}
+
+	function scrollHandler(){
+		sct = $(window).scrollTop();
+		// 스크롤시 메뉴 사라지게 하기
+		if(w<700){
+			if($(".menu-btn").find("a").hasClass("btn-close")){
+				$(".menu-btn").find("a").removeClass("btn-close").addClass("btn-open");
+				$("#cmGnb").css({"display":"none"});	
+				$("#cmHead").css({'overflow':'hidden'});
+				openHandler();
+			}
+		}
+		if($(".menu-btn").find("a").hasClass("btn-close")){
+			$(".menu-btn").find("a").removeClass("btn-close").addClass("btn-open");
+			$("#cmGnb").css({"display":"none"});	
+			$("#cmHead").css({'overflow':'hidden'});
+			openHandler();
+		}
+	}
+});
+</script>

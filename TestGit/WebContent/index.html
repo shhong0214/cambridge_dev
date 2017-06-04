@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<title>CAMBRIDGE MEMBERS</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/gambit-smoothscroll-min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://coding.tizkorea.co.kr/flick/jquery.event.drag.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/flickSlide.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var fileTarget = $('.filebox .upload-hidden');
+
+    fileTarget.on('change', function(){
+        if(window.FileReader){
+            var filename = $(this)[0].files[0].name;
+        } else {
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        }
+        $(this).siblings('.upload-name').val(filename);
+    });
+}); 
+</script>
+<script type="text/javascript">
+$(function(){
+  $('.btn_show').click(function(){
+    $('.layText').show();
+  });
+  $('.btn_hide').click(function(){
+    $('.layText').hide();
+  });
+});
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+	<body>
+		<header id="cmHead"><!-- class="white" 추가 흰색 gnb -->
+			<div class="inner">
+				<h1><a href="#none" class="link_site">Cambridge Members</a></h1>
+				<nav id="cmGnb">
+					<h2 class="screen_out">주메뉴</h2>
+					<ul class="gnb_comm">
+						<li><a href="#none" class="link_cont">Event</a></li>
+						<li><a href="#none" class="link_cont">Video</a></li>
+						<li><a href="history/history.html" class="link_cont">Brand History</a></li>
+						<li><a href="#none" class="link_cont">MTM</a></li>
+						<li><a href="shop/store.html" class="link_cont">Shop Info.</a></li>
+						<li><a href="#none" class="link_cont">Customer Service</a></li>
+					</ul>
+				</nav>
+				<div class="menu-btn">
+					<a href="javascript:void(0)" class="btn-open"></a>
+				</div>
+			</div>
+		</header>
+		<main id="cmContents">
+			<h2 class="screen_out">메인 컨텐츠</h2>
+			<article id="mArticle">
+				<section class="section_promo">
+					<div id="pagNav01">
+						<ul>
+						    <li class="prmConts01">
+						        <dl class="desc">
+						            <dt>
+						                <div>가치는<br>나이들지않습니다</div>
+						                <p>캠브리지 멤버스 40주년 감사 이벤트</p>
+						            </dt>
+						            <dd><a href="#n" onclick="openLayer('layerPop',140,50)">참여하기</a></dd>
+						        </dl>
+						    </li>
+						    <li class="prmConts04">
+						        <!-- <div class="layText btn_hide"></div> -->
+						        <!-- <dl class="desc">
+						            <dt>
+						                <div>가치는<br>나이들지않습니다</div>
+						                <p>캠브리지 멤버스 40주년 감사 이벤트</p>
+						            </dt>
+						            <dd><a href="#n" class="btn_show">상세보기</a></dd>
+						        </dl> -->
+						    </li>
+						    <li class="prmConts02">
+						        <dl>
+						            <dt>
+						                <div>COOL BIZ</div>
+						                <p>더 - 시원하게</p>
+						            </dt>
+						            <dd>
+						            	<a href="http://www.kolonmall.com/featured/special_view.html?special_id=9931" target="_blank" class="btn_more link_pc">더보기</a>
+						            	<a href="http://www.kolonmall.com/featured/special_view.html?special_id=9942" target="_blank" class="btn_more link_m">더보기</a>
+						            </dd>
+						        </dl>
+						    </li>
+						    <!-- <li class="prmConts03">
+						        <div class="textWrap">
+						            <p>CAMBRIDGE MEMBERS</p>
+						            <span>ZERO<br>
+								COLLECTION</span>
+						        </div>
+						    </li> -->
+						</ul>
+						<span class="anchor"></span>
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_prev">prev</button>
+						<button type="button" class="btn_next">next</button>
+					</div>
+					<div id="pagNav01_paging" class="btn_area2" style="text-align:center;"></div>
+					<!-- Layer 이벤트참여 -->
+					<div id="wrapper">
+					    <div id="layerPop">
+					        <a href="#" onclick="closeLayer('layerPop')" class="close">close</a>
+					        <iframe src="pop_promo.html" frameborder="0"></iframe>
+					    </div>
+					</div>
+					<!-- //Layer 이벤트참여 -->
+					<!-- Layer 상세복기 -->
+					<!-- <div id="wrapper">
+					    <div id="layerPop2">
+					        <iframe src="pop_detail.html" frameborder="0"></iframe>
+					    </div>
+					</div> -->
+					<!-- //Layer 상세복기 -->
+				</section>
+				<section class="section_motto">
+					<h3 class="screen_out">Cambridge Motto</h3>
+					<div class="youtubeWrap">
+						<iframe width="100%" height="1080" src="https://www.youtube.com/embed/RPNichmnAJ8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<!-- <div class="inner">
+						<div class="box_motto">
+							<p class="tit_motto">We Are<br>Cambridge<br>Members.</p>
+							<p class="txt_motto">캠브리지 멤버스 40주년.<br>가치는 나이가 들지 않습니다.</p>
+						</div>
+					</div>
+					<div class="page-container">
+						<div class="page-about">
+							<div class="menu-overlay-mobile"></div>
+							<section class="about-hero" style="visibility: visible; transform: translate3d(0px, 0px, 0px);">
+								<div class="fullscreen-video">
+									<video autoplay="" playsinline="" webkit-playsinline="" loop="" preload="auto" muted="">
+										<source src="mov/cm_17ss_movie_n.mp4" type="video/mp4">
+									</video>
+								</div>
+							</section>
+						</div>
+					</div> -->
+				</section>
+				<section class="section_history">
+					<h3 class="screen_out">Brand History</h3>
+					<div class="inner">
+						<ul class="list_history">
+							<li class="year1">
+								<a href="history/history.html#1" class="linkArea">
+									<span class="point"></span>
+									<span class="num_year">1977</span>
+									<span class="txt_cont">캠브리지 브랜드 출범</span>
+								</a>
+							</li>
+							<li class="year2">
+								<a href="history/history.html#2">
+									<span class="point"></span>
+									<span class="num_year">1980</span>
+									<span class="txt_cont">MTM Service 효시</span>
+								</a>
+							</li>
+							<li class="year3">
+								<a href="history/history.html#3">
+									<span class="point"></span>
+									<span class="num_year">1989</span>
+									<span class="txt_cont">아큐아스큐텀의<br>품질과 기술전수</span>
+								</a>
+							</li>
+							<li class="year4">
+								<a href="history/history.html#4">
+									<span class="point"></span>
+									<span class="num_year">1993</span>
+									<span class="txt_cont">새로워진 캠브리지 정장</span>
+								</a>
+							</li>
+							<li class="year5">
+								<a href="history/history.html#5">
+									<span class="point"></span>
+									<span class="num_year">2007</span>
+									<span class="txt_cont">새롭게 도약하는<br>캠브리지 멤버스</span>
+								</a>
+							</li>
+							<li class="year6">
+								<a href="history/history.html#6">
+									<span class="point"></span>
+									<span class="num_year">2010</span>
+									<span class="txt_cont">더욱 강화된 디자인과 패턴</span>
+								</a>
+							</li>
+							<li class="year7">
+								<a href="history/history.html#7">
+									<span class="point"></span>
+									<span class="num_year">2014</span>
+									<span class="txt_cont">새로워진 플래그십 스토어</span>
+								</a>
+							</li>
+							<li class="year8">
+								<a href="history/history.html#8">
+									<span class="point"></span>
+									<span class="num_year">2017</span>
+									<span class="txt_cont">40여년 전통의<br>캠브리지 멤버스</span>
+								</a>
+							</li>
+						</ul>
+						<p class="txt_history"><span>Since 1977</span>40TH ANNIVERSARY</p>
+						<a href="history/history.html" class="link_more">상세보기</a>
+					</div>
+				</section>
+				<section class="section_mtm">
+					<h3 class="screen_out">MTM</h3>
+					<div class="inner">
+						<div class="box_cont">
+							<strong class="tit_mtm">MTM Service</strong>
+							<span class="txt_mtm">세상에 오직 하나뿐인 나만의 맞춤 디자인</span>
+						</div>
+						<p class="txt_desc tx_w">MADE TO MEASURE의 약자로 고객의 체형을 직접 채촌한 후,<br>개인의 취향에 맞추어 원단, 부자재 등을 선택하여 제작해 드리는 <br>세상에 오직 하나뿐인맞춤 디자인 서비스입니다.</p>
+						<p class="txt_desc tx_b">MADE TO MEASURE의 약자로 고객의<br>
+						체형을 직접 체촌한 후, 개인의 취향에<br>
+						맞추어 원단, 부자재 등을 선택하여<br>
+						제작해 드리는 세상에 오직 하나뿐인<br>
+						맞춤 디자인 서비스입니다.</p>
+					</div>
+				</section>
+				<section class="section_shop">
+					<h3 class="screen_out">Shop Info</h3>
+					<div class="inner">
+						<strong class="tit_shop"><span class="txt_en">Store Info.</span><span class="txt_ko">가까운 캠브리지 멤버스 <br>매장 찾기</span></strong>
+						<div class="inp_comm">
+							<input type="search" class="inp_search" placeholder="매장 이름 또는 지역을 입력해 주세요.">
+							<button type="button" class="btn_search"><span class="ico_comm">검색</span></button>
+						</div>
+						<a href="shop/store.html" class="link_all">전체 매장 보기</a>
+					</div>
+				</section>
+				<section class="section_social">
+					<h3 class="screen_out">Social Media</h3>
+					<div class="inner">
+						<div class="box_social">
+							<strong class="tit_cont1">New Classic</strong>
+							<strong class="tit_cont2">New Gentleman</strong>
+							<p class="txt_cont">1977년부터 소신 있는 한국 신사가 선택해 온 수트. 캠브리지 멤버스만의 차별화된 서비스를 만나보세요.</p>
+						</div>
+						<ul class="list_social">
+							<li>
+								<a href="#none" class="link_cont">
+									<span class="thumb_g">
+										<span class="ico_comm ico_facebook1">페이스북</span>
+										<img src="images/thumb1.jpg" width="240" height="320" alt="페이스북 채널">
+									</span>
+									<div class="cont_detail">
+										<span class="ico_comm ico_facebook2"></span>
+										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
+										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
+									</div>
+									
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="link_cont">
+									<span class="thumb_g">
+										<span class="ico_comm ico_insta">인스타</span>
+										<img src="images/thumb2.jpg" width="240" height="320" alt="페이스북 채널">
+									</span>
+									<div class="cont_detail">
+										<span class="ico_comm ico_facebook2"></span>
+										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
+										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
+									</div>
+									
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="link_cont">
+									<span class="thumb_g">
+										<span class="ico_comm ico_youtube">유투브</span>
+										<!-- <span class="ico_comm ico_vod">동영상</span> -->
+										<img src="images/thumb3.jpg" width="240" height="320" alt="페이스북 채널">
+									</span>
+									<div class="cont_detail">
+										<span class="ico_comm ico_facebook2"></span>
+										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
+										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
+									</div>
+									
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="link_cont">
+									<span class="thumb_g">
+										<span class="ico_comm ico_gplay"></span>
+										<img src="images/thumb4.jpg" width="240" height="320" alt="페이스북 채널">
+									</span>
+									<div class="cont_detail">
+										<span class="ico_comm ico_facebook2"></span>
+										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
+										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
+									</div>
+									
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</article>
+		</main>
+		<footer id="cmFoot" class="footer">
+			<div class="inner">
+				<h2 class="screen_out">사이트 정보</h2>
+				<!-- <nav class="link_comm">
+					<h3 class="screen_out">관련 링크 목록</h3>
+					<ul class="list_link">
+						<li>
+							<strong class="tit_link">Online Shop</strong>
+							<a href="http://www.kolonmall.com/featured/special_view.html?special_id=8350" target="_blank" class="link_shop">
+								<span class="ico_comm"></span>
+								<span class="link_name">Kolon<br>Mall</span>
+							</a>
+						</li>
+						<li>
+							<strong class="tit_link">Collection</strong>
+							<a href="#none" class="link_collection">
+								<span class="ico_comm"></span>
+								<span class="link_name">2017 S/S Season<br>Lookbook</span>
+							</a>
+						</li>
+						<li>
+							<strong class="tit_link">Share Your Style</strong>
+							<a href="https://www.facebook.com/CambridgeMembers" target="_blank" class="link_fc"><span class="ico_comm">페이스북</span></a>
+							<a href="https://www.instagram.com/cambridge_members/" target="_blank" class="link_is"><span class="ico_comm">인스타</span></a>
+							<a href="https://www.youtube.com/channel/UC-Zo209JSzMr18cYlIbjJgw" target="_blank" class="link_yt"><span class="ico_comm">유투브</span></a>
+						</li>
+						<li>
+							<strong class="tit_link">Download App.</strong>
+							<a href="#none" class="link_app">
+								<span class="ico_comm"></span>
+								<span class="link_name">Cambridge<br>MTM</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="mobMap">
+					<ul class="siteLink">
+						<li>
+							<a href="http://www.kolonmall.com/featured/special_view.html?special_id=8350" target="_blank" class="link01"></a>
+							<span>ONLINE<br>SHOP</span>
+						</li>
+						<li>
+							<a href="#n" class="link02"></a>
+							<span>LOOKBOOK</span>
+						</li>
+						<li>
+							<a href="#n" class="link03"></a>
+							<span>MTM APP.<br>DOWNLOAD</span>
+						</li>
+					</ul>
+					<div class="snsLink">
+						<p><a href="https://www.facebook.com/CambridgeMembers" target="_blank" class="sns01"></a></p>
+						<p><a href="https://www.instagram.com/cambridge_members/" target="_blank" class="sns02"></a></p>
+						<p><a href="https://www.youtube.com/channel/UC-Zo209JSzMr18cYlIbjJgw" target="_blank" class="sns03"></a></p>
+					</div>
+				</div> -->
+				<div class="cont_info">
+					<a href="#none" class="link_site">Cambridge Members</a>
+					<div class="site_info">
+						<strong class="txt_name">코오롱인더스트리 FnC 부문</strong>
+						<address class="txt_addr">대표이사 : 박동문 / 서울시 강남구 삼성로 518 코오롱인더스트리빌딩 / Tel : 1588-7667  Email : cambridge@kolon.com </address>
+						<small class="txt_copy">Copyright© 2017 CAMBRIDGE MEMBERS CO., LTD.  All rights reserved.</small>
+					</div>
+					<a href="http://www.kolonmall.com/featured/special_view.html?special_id=8350" target="_blank" class="link_shop">
+						<span class="ico_comm"></span>
+						<span class="link_name">Kolon Mall</span>
+					</a>
+				</div>
+			</div>
+			<a href="#n" class="btn_pc">PC 버전 보기</a>
+			<a href="#pagetop" class="pageTop">Page Top</a>
+		</footer>
+	</body>
+</html>
+<script type="text/javascript">
+
+var chkParam=$(location).attr('hash').replace(/^#/, "");
+var p=(chkParam=="")?0:parseInt(chkParam);
+console.log("p ============"+p);
+var w=parseInt($(window).width());
+var chkH=0;
+var scrollChkBool=false;
+var arrOfLoc=[];
+var sct=0;
+
+$(window).load(function(){
+	$("body, html").stop().animate({scrollTop:arrOfLoc[p]},{duration:500, ease:'easeOutCubic'});
+});
+
+$(document).ready(function(){
+	resizeHandler();
+	sct=arrOfLoc[p];
+	// $('body, html').scrollTop(arrOfLoc[p]);
+	$("body, html").stop().animate({scrollTop:arrOfLoc[p]},{duration:500, ease:'easeOutCubic'});
+	openHandler();
+	function openHandler(){
+		$(".btn-open").unbind();
+		$(".btn-open").bind("click",function(e){
+			$(this).removeClass("btn-open").addClass("btn-close");
+			$("#cmGnb").css({'display':'block'});
+			$("#cmHead").css({'overflow':'visible'});
+			closeHandler();
+		});
+	}
+
+	function closeHandler(){
+		$(".btn-close").unbind();
+		$(".btn-close").bind("click",function(e){
+			$(this).removeClass("btn-close").addClass("btn-open");
+			$("#cmGnb").css({'display':'none'});
+			$("#cmHead").css({'overflow':'hidden'});
+			openHandler();
+		});
+	}
+
+
+	$(".gnb_comm li").bind("click",function(e){
+		var tg=$(e.target);
+		var n=$(this).index();
+		console.log("n = "+n);
+		if(tg.is("a")){
+			e.preventDefault();
+			var chkNum=n;
+			$("body, html").animate({scrollTop:arrOfLoc[chkNum]},{duration:600, ease:'easeOutCubic'});
+			if(w<=700){
+				if($(".menu-btn").find("a").hasClass("btn-close")){
+					$(".menu-btn").find("a").removeClass("btn-close").addClass("btn-open");	
+					openHandler();
+					$("#cmGnb").css({"display":"none"});
+					$("#cmHead").css({'overflow':'hidden'});
+				}
+			}
+		}
+	});
+	$(window).scroll(function(){
+		scrollHandler();
+	});
+	$(window).resize(function(){
+		resizeHandler();
+	});
+
+	resizeHandler();
+	scrollHandler();
+
+	function scrollHandler(){
+		w=parseInt($(window).width());
+		sct = $(window).scrollTop();
+		// console.log("sct = "+sct);
+		if(sct>=70){
+			if(!scrollChkBool){
+				console.log("scrollChkBool ------------------a");
+				$("#cmHead").css({"position":"fixed","marginTop":chkH+'px'});
+				// if(w>700)	$(".gnb_comm li a").stop().animate({"color":"#000"});
+				// else		$(".gnb_comm li a").stop().animate({"color":"#fff"});
+				$("#cmHead").stop().animate({marginTop:"0"},300);
+				$("#cmHead").addClass("white");
+				scrollChkBool=true;
+			}
+		}else{
+			if(scrollChkBool){
+				$("#cmHead").css({"position":"absolute","marginTop":'0px'});
+				$("#cmHead").stop().animate({marginTop:"0"},0);
+				$("#cmHead").removeClass("white");
+				scrollChkBool=false;
+			}
+		}
+		// if(w<700){
+		// 	if($(".menu-btn").find("a").hasClass("btn-close")){
+		// 		$(".menu-btn").find("a").removeClass("btn-close").addClass("btn-open");
+		// 		$("#cmGnb").css({"display":"none"});	
+		// 		$("#cmHead").css({'overflow':'hidden'});
+		// 		openHandler();
+		// 	}
+		// }
+		if(sct>=70){
+			$("#cmHead").css({"backgroundColor":"#fff"});
+			$(".gnb_comm").css({"backgroundColor":"#fff"});
+			$(".gnb_comm li a").stop().animate({"color":"#000"});
+		}else{
+			$("#cmHead").css({"backgroundColor":"#000"});
+				$(".gnb_comm").css({"backgroundColor":"#000"});
+				$(".gnb_comm li a").stop().animate({"color":"#fff"});
+		}
+	}
+
+	function resizeHandler(){
+		w=parseInt($(window).width());
+		if(w<=700)	chkH=-30;
+		else		chkH=-70;
+
+		if(w<=700)	{$('body').css({"backgroundColor":"#000"})}
+		else		{$('body').css({"backgroundColor":"#fafafa"})}
+
+		if(w>700){
+			
+			// $(".menu-btn").find("a").removeClass("btn-close");
+			if($(".menu-btn").find("a").hasClass("btn-open")){
+				$(".menu-btn").find("a").removeClass("btn-open").addClass("btn-close");
+				closeHandler();
+			}
+			
+			if(sct>=70){
+				console.log("a");
+				$(".gnb_comm li a").stop().animate({"color":"#000"});
+			}else{
+				console.log("b");
+				$(".gnb_comm li a").stop().animate({"color":"#fff"});
+			}
+			$("#cmGnb").css({"display":"block"});
+			$("#cmHead").css({'overflow':'visible'});
+		}else{
+			console.log("c");
+			if($(".menu-btn").find("a").hasClass("btn-close")){
+				$(".menu-btn").find("a").removeClass("btn-close").addClass("btn-open");	
+				openHandler();
+			}
+			
+			$("#cmGnb").css({"display":"none"});
+			$("#cmHead").css({'overflow':'hidden'});
+			$(".gnb_comm li a").stop().animate({"color":"#fff"});
+		}
+		
+		// arrOfLoc=[0];
+		var sections=$("#mArticle > section");
+		console.log("sections.length =========== "+ sections.length);
+
+		for(var a=0;a<sections.length;a++){
+			var section=sections.eq(a);
+			arrOfLoc.push(parseInt(section.offset().top)+(a==0?0:chkH));
+		}
+		// console.log("arrOfLoc =========== "+ arrOfLoc);
+		// console.log('chkH = ' + chkH);
+	}
+});
+</script>
+<!--  -->
+

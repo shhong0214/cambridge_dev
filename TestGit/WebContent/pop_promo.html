@@ -1,0 +1,71 @@
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var fileTarget = $('.filebox .upload-hidden');
+
+    fileTarget.on('change', function(){
+        if(window.FileReader){
+            var filename = $(this)[0].files[0].name;
+        } else {
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        }
+        $(this).siblings('.upload-name').val(filename);
+    });
+}); 
+</script>
+
+<body style="background-color:transparent">
+    <!-- Layer Pop -->
+    <div class="lay_promo">
+        <dl>
+            <dt>· 이&nbsp;&nbsp;름</dt>
+            <dd>
+                <input type="text" name="">
+            </dd>
+        </dl>
+        <dl>
+            <dt>· 연락처</dt>
+            <dd>
+                <input type="text" name="">
+            </dd>
+        </dl>
+        <dl>
+            <dt>· 주&nbsp;&nbsp;소</dt>
+            <dd>
+                <p class="ipt_post">
+                    <input type="text" name=""><a href="#n">주소검색</a></p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>· 사&nbsp;&nbsp;진</dt>
+            <dd>
+                <div class="filebox">
+                    <input class="upload-name" value="최대 5MB" disabled="disabled">
+                    <label for="ex_filename">업로드</label>
+                    <input type="file" id="ex_filename" class="upload-hidden">
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>· 구입연도</dt>
+            <dd>
+                <div>
+                    <input type="text" name="">
+                </div>
+                <textarea>구입 당시의 특별한 기억이 있으시다면 그 사연을 함께 적어주세요. (예 : 결혼식 예복, 첫 출근 정장 등)</textarea>
+                <div class="agree">
+                    <p class="check"><input type="checkbox" name=""> <label>개인 정보 수집/이용에 대한 동의</label></p>
+                    <a href="#n" onclick="openLayer('pop_comp',0,0)">자세히보기</a>
+                </div>
+                <a href="#n" class="btn_comp">응 모 완 료</a>
+            </dd>
+        </dl>
+    </div>
+    <!-- //Layer Pop -->
+    <div id="pop_comp" class="pop_comp">
+        <a href="#n" class="btn_prev">돌 아 가 기</a>
+    </div>
+</body>
