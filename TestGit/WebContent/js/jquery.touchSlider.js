@@ -54,7 +54,7 @@
       counter : null,
       propagation : false,
       autoplay : {
-        enable : true,
+        enable : false,
         pauseHover : true,
         addHoverTarget : "",
         interval : 3000

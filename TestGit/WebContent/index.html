@@ -15,7 +15,7 @@
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/gambit-smoothscroll-min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" integrity="sha384-WksqwlT8hWlAsDjVT3cRrnCjB7YvUzq8jcwbyvcUWsT2leBuNB5KOay2yMPL43EV" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script type="text/javascript" src="http://coding.tizkorea.co.kr/flick/jquery.event.drag.js"></script>
 <script type="text/javascript" src="js/jquery.touchSlider.js"></script>
 <script type="text/javascript" src="js/flickSlide.js"></script>
@@ -33,22 +33,12 @@ $(document).ready(function(){
     });
 }); 
 </script>
-<script type="text/javascript">
-$(function(){
-  $('.btn_show').click(function(){
-    $('.layText').show();
-  });
-  $('.btn_hide').click(function(){
-    $('.layText').hide();
-  });
-});
-</script>
 <!--[if lt IE 9]>
 <script src="js/html5shiv.min.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
 </head>
-	<body>
+	<body id="pagetop">
 		<header id="cmHead"><!-- class="white" 추가 흰색 gnb -->
 			<div class="inner">
 				<h1><a href="#none" class="link_site">Cambridge Members</a></h1>
@@ -57,6 +47,7 @@ $(function(){
 					<ul class="gnb_comm">
 						<li><a href="#none" class="link_cont">Event</a></li>
 						<li><a href="#none" class="link_cont">Video</a></li>
+						<li><a href="#none" class="link_cont">Collection</a></li>
 						<li><a href="history/history.html" class="link_cont">Brand History</a></li>
 						<li><a href="#none" class="link_cont">MTM</a></li>
 						<li><a href="shop/store.html" class="link_cont">Shop Info.</a></li>
@@ -84,14 +75,6 @@ $(function(){
 						        </dl>
 						    </li>
 						    <li class="prmConts04">
-						        <!-- <div class="layText btn_hide"></div> -->
-						        <!-- <dl class="desc">
-						            <dt>
-						                <div>가치는<br>나이들지않습니다</div>
-						                <p>캠브리지 멤버스 40주년 감사 이벤트</p>
-						            </dt>
-						            <dd><a href="#n" class="btn_show">상세보기</a></dd>
-						        </dl> -->
 						    </li>
 						    <li class="prmConts02">
 						        <dl>
@@ -105,13 +88,6 @@ $(function(){
 						            </dd>
 						        </dl>
 						    </li>
-						    <!-- <li class="prmConts03">
-						        <div class="textWrap">
-						            <p>CAMBRIDGE MEMBERS</p>
-						            <span>ZERO<br>
-								COLLECTION</span>
-						        </div>
-						    </li> -->
 						</ul>
 						<span class="anchor"></span>
 					</div>
@@ -120,45 +96,51 @@ $(function(){
 						<button type="button" class="btn_next">next</button>
 					</div>
 					<div id="pagNav01_paging" class="btn_area2" style="text-align:center;"></div>
-					<!-- Layer 이벤트참여 -->
 					<div id="wrapper">
 					    <div id="layerPop">
 					        <a href="#" onclick="closeLayer('layerPop')" class="close">close</a>
 					        <iframe src="pop_promo.html" frameborder="0"></iframe>
 					    </div>
 					</div>
-					<!-- //Layer 이벤트참여 -->
-					<!-- Layer 상세복기 -->
-					<!-- <div id="wrapper">
-					    <div id="layerPop2">
-					        <iframe src="pop_detail.html" frameborder="0"></iframe>
-					    </div>
-					</div> -->
-					<!-- //Layer 상세복기 -->
 				</section>
 				<section class="section_motto">
 					<h3 class="screen_out">Cambridge Motto</h3>
 					<div class="youtubeWrap">
 						<iframe width="100%" height="1080" src="https://www.youtube.com/embed/RPNichmnAJ8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 					</div>
-					<!-- <div class="inner">
-						<div class="box_motto">
-							<p class="tit_motto">We Are<br>Cambridge<br>Members.</p>
-							<p class="txt_motto">캠브리지 멤버스 40주년.<br>가치는 나이가 들지 않습니다.</p>
+				</section>
+				<section class="section_collect">
+					<div class="ctWrap">
+						<h1>Collection</h1>
+						<div class="list">
+							<div class="dir01">
+								<p>SUIT</p>
+								<img src="images/img_collect01.png" class="img_p">
+								<img src="images/img_collect01m.png" class="img_m">
+							</div>
+							<ul class="column">
+								<li class="dir02">
+									<img src="images/img_collect02.png" class="img_p">
+									<img src="images/img_collect02m.png" class="img_m">
+								</li>
+								<li class="dir03">
+									<p>Jacket</p>
+									<img src="images/img_collect03.png" class="img_p">
+									<img src="images/img_collect03m.png" class="img_m">
+								</li>
+								<li class="dir04">
+									<p>Outer</p>
+									<img src="images/img_collect04.png" class="img_p">
+									<img src="images/img_collect04m.png" class="img_m">
+								</li>
+								<li class="dir05">
+									<p>Shirts</p>
+									<img src="images/img_collect05.png" class="img_p">
+									<img src="images/img_collect05m.png" class="img_m">
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="page-container">
-						<div class="page-about">
-							<div class="menu-overlay-mobile"></div>
-							<section class="about-hero" style="visibility: visible; transform: translate3d(0px, 0px, 0px);">
-								<div class="fullscreen-video">
-									<video autoplay="" playsinline="" webkit-playsinline="" loop="" preload="auto" muted="">
-										<source src="mov/cm_17ss_movie_n.mp4" type="video/mp4">
-									</video>
-								</div>
-							</section>
-						</div>
-					</div> -->
 				</section>
 				<section class="section_history">
 					<h3 class="screen_out">Brand History</h3>
@@ -225,19 +207,13 @@ $(function(){
 						<a href="history/history.html" class="link_more">상세보기</a>
 					</div>
 				</section>
-				<section class="section_mtm">
-					<h3 class="screen_out">MTM</h3>
-					<div class="inner">
-						<div class="box_cont">
-							<strong class="tit_mtm">MTM Service</strong>
-							<span class="txt_mtm">세상에 오직 하나뿐인 나만의 맞춤 디자인</span>
-						</div>
-						<p class="txt_desc tx_w">MADE TO MEASURE의 약자로 고객의 체형을 직접 채촌한 후,<br>개인의 취향에 맞추어 원단, 부자재 등을 선택하여 제작해 드리는 <br>세상에 오직 하나뿐인맞춤 디자인 서비스입니다.</p>
-						<p class="txt_desc tx_b">MADE TO MEASURE의 약자로 고객의<br>
-						체형을 직접 체촌한 후, 개인의 취향에<br>
-						맞추어 원단, 부자재 등을 선택하여<br>
-						제작해 드리는 세상에 오직 하나뿐인<br>
-						맞춤 디자인 서비스입니다.</p>
+				<section class="section_mtm2">
+					<div class="mtmConts01">
+						<dl>
+							<dt>New Classic &<span class="br"></span>New Gentleman</dt>
+							<dd>MADE TO<span class="br"></span>MEASURE</dd>
+						</dl>
+						<a href="mtm/detail.html" class="btn_more">상세보기</a>
 					</div>
 				</section>
 				<section class="section_shop">
@@ -261,61 +237,32 @@ $(function(){
 						</div>
 						<ul class="list_social">
 							<li>
-								<a href="#none" class="link_cont">
-									<span class="thumb_g">
-										<span class="ico_comm ico_facebook1">페이스북</span>
-										<img src="images/thumb1.jpg" width="240" height="320" alt="페이스북 채널">
-									</span>
-									<div class="cont_detail">
-										<span class="ico_comm ico_facebook2"></span>
-										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
-										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
-									</div>
-									
-								</a>
+								<span class="thumb_g">
+									<span class="ico_comm ico_facebook1">페이스북</span>
+									<img src="images/thumb1.jpg" class="img_p" alt="페이스북 채널">
+									<img src="images/thumb1m.jpg" class="img_m" alt="페이스북 채널">
+								</span>
 							</li>
 							<li>
-								<a href="#none" class="link_cont">
-									<span class="thumb_g">
-										<span class="ico_comm ico_insta">인스타</span>
-										<img src="images/thumb2.jpg" width="240" height="320" alt="페이스북 채널">
-									</span>
-									<div class="cont_detail">
-										<span class="ico_comm ico_facebook2"></span>
-										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
-										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
-									</div>
-									
-								</a>
+								<span class="thumb_g">
+									<span class="ico_comm ico_insta">인스타</span>
+									<img src="images/thumb2.jpg" class="img_p" alt="페이스북 채널">
+									<img src="images/thumb2m.jpg" class="img_m" alt="페이스북 채널">
+								</span>
 							</li>
 							<li>
-								<a href="#none" class="link_cont">
-									<span class="thumb_g">
-										<span class="ico_comm ico_youtube">유투브</span>
-										<!-- <span class="ico_comm ico_vod">동영상</span> -->
-										<img src="images/thumb3.jpg" width="240" height="320" alt="페이스북 채널">
-									</span>
-									<div class="cont_detail">
-										<span class="ico_comm ico_facebook2"></span>
-										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
-										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
-									</div>
-									
-								</a>
+								<span class="thumb_g">
+									<span class="ico_comm ico_youtube">유투브</span>
+									<img src="images/thumb3.jpg" class="img_p" alt="페이스북 채널">
+									<img src="images/thumb3m.jpg" class="img_m" alt="페이스북 채널">
+								</span>
 							</li>
 							<li>
-								<a href="#none" class="link_cont">
-									<span class="thumb_g">
-										<span class="ico_comm ico_gplay"></span>
-										<img src="images/thumb4.jpg" width="240" height="320" alt="페이스북 채널">
-									</span>
-									<div class="cont_detail">
-										<span class="ico_comm ico_facebook2"></span>
-										<strong class="tit_detail">New Classic &<br>New Gentleman</strong>
-										<span class="txt_desc">British Classic Mood의<br> 수트와 라이프 스타일을 제안하는<br>캠브리지 멤버스의<br> 페이스북 채널입니다.</span>
-									</div>
-									
-								</a>
+								<span class="thumb_g">
+									<span class="ico_comm ico_gplay"></span>
+									<img src="images/thumb4.jpg" class="img_p" alt="페이스북 채널">
+									<img src="images/thumb4m.jpg" class="img_m" alt="페이스북 채널">
+								</span>
 							</li>
 						</ul>
 					</div>
@@ -325,77 +272,24 @@ $(function(){
 		<footer id="cmFoot" class="footer">
 			<div class="inner">
 				<h2 class="screen_out">사이트 정보</h2>
-				<!-- <nav class="link_comm">
-					<h3 class="screen_out">관련 링크 목록</h3>
-					<ul class="list_link">
-						<li>
-							<strong class="tit_link">Online Shop</strong>
-							<a href="http://www.kolonmall.com/featured/special_view.html?special_id=8350" target="_blank" class="link_shop">
-								<span class="ico_comm"></span>
-								<span class="link_name">Kolon<br>Mall</span>
-							</a>
-						</li>
-						<li>
-							<strong class="tit_link">Collection</strong>
-							<a href="#none" class="link_collection">
-								<span class="ico_comm"></span>
-								<span class="link_name">2017 S/S Season<br>Lookbook</span>
-							</a>
-						</li>
-						<li>
-							<strong class="tit_link">Share Your Style</strong>
-							<a href="https://www.facebook.com/CambridgeMembers" target="_blank" class="link_fc"><span class="ico_comm">페이스북</span></a>
-							<a href="https://www.instagram.com/cambridge_members/" target="_blank" class="link_is"><span class="ico_comm">인스타</span></a>
-							<a href="https://www.youtube.com/channel/UC-Zo209JSzMr18cYlIbjJgw" target="_blank" class="link_yt"><span class="ico_comm">유투브</span></a>
-						</li>
-						<li>
-							<strong class="tit_link">Download App.</strong>
-							<a href="#none" class="link_app">
-								<span class="ico_comm"></span>
-								<span class="link_name">Cambridge<br>MTM</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="mobMap">
-					<ul class="siteLink">
-						<li>
-							<a href="http://www.kolonmall.com/featured/special_view.html?special_id=8350" target="_blank" class="link01"></a>
-							<span>ONLINE<br>SHOP</span>
-						</li>
-						<li>
-							<a href="#n" class="link02"></a>
-							<span>LOOKBOOK</span>
-						</li>
-						<li>
-							<a href="#n" class="link03"></a>
-							<span>MTM APP.<br>DOWNLOAD</span>
-						</li>
-					</ul>
-					<div class="snsLink">
-						<p><a href="https://www.facebook.com/CambridgeMembers" target="_blank" class="sns01"></a></p>
-						<p><a href="https://www.instagram.com/cambridge_members/" target="_blank" class="sns02"></a></p>
-						<p><a href="https://www.youtube.com/channel/UC-Zo209JSzMr18cYlIbjJgw" target="_blank" class="sns03"></a></p>
-					</div>
-				</div> -->
 				<div class="cont_info">
 					<a href="#none" class="link_site">Cambridge Members</a>
 					<div class="site_info">
 						<strong class="txt_name">코오롱인더스트리 FnC 부문</strong>
-						<address class="txt_addr">대표이사 : 박동문 / 서울시 강남구 삼성로 518 코오롱인더스트리빌딩 / Tel : 1588-7667  Email : cambridge@kolon.com </address>
+						<address class="txt_addr">대표이사 : 박동문 / 서울시 강남구 삼성로 518 코오롱인더스트리빌딩<span class="br">/</span>Tel : 1588-7667  Email : cambridge@kolon.com </address>
 						<small class="txt_copy">Copyright© 2017 CAMBRIDGE MEMBERS CO., LTD.  All rights reserved.</small>
 					</div>
-					<a href="http://www.kolonmall.com/featured/special_view.html?special_id=8350" target="_blank" class="link_shop">
+					<a href="http://www.kolonmall.com" target="_blank" class="link_shop">
 						<span class="ico_comm"></span>
 						<span class="link_name">Kolon Mall</span>
 					</a>
 				</div>
 			</div>
-			<a href="#n" class="btn_pc">PC 버전 보기</a>
 			<a href="#pagetop" class="pageTop">Page Top</a>
 		</footer>
 	</body>
 </html>
+
 <script type="text/javascript">
 
 var chkParam=$(location).attr('hash').replace(/^#/, "");

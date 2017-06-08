@@ -74,62 +74,66 @@
 #pop_comp {display: none; position: absolute; width: 740px; height: 787px; margin-left: 558px; background: url(../images/event_pop3.png) 0 0 no-repeat;}
 #pop_comp a.btn_prev {position: absolute; left: 50%; bottom: 53px; width: 334px; height: 70px; margin-left: -167px; background: #956e38; font-size: 24px; color: #fff; line-height: 70px; text-align: center;}
 
-#pagNav02 {width:100%; height:100%; margin:0 auto; background:#fff; position:relative; overflow:hidden;}
-#pagNav02 ul {width:99999px; height:100%; position:absolute; top:0; left:0; overflow:hidden;}
-#pagNav02 ul li {float:left; width:100%; height:100%;}
-.section_mtm2 {position: relative; height:1080px; background-size:cover;}
-.section_mtm2 .btn_area {position: absolute; left: 0; top: 420px; width: 100%; text-align: center;}
-.section_mtm2 .btn_area button {}
-.section_mtm2 .btn_area .btn_prev {position: absolute; display:inline-block; width:50px; height:50px; text-indent: -9999px; left: 15px; top: 0; background: url(../images/swp_nav02_l.png) 50% 50% no-repeat; z-index: 999;}
-.section_mtm2 .btn_area .btn_next {position: absolute; display:inline-block; width:50px; height:50px; text-indent: -9999px; right: 15px; top: 0; background: url(../images/swp_nav02_r.png) 50% 50% no-repeat;}
-.section_mtm2 .btn_area2 {position: absolute; left: 0; top: 935px; width: 100%; text-align: center;}
-.section_mtm2 .btn_area2 .btn_page {display:inline-block; width:16px; height:16px; margin: 7px; background: url(../images/icon_pag02.png) 0 0 no-repeat; font-size:0px; line-height:0; text-indent:-9999px;}
-.section_mtm2 .btn_area2 .btn_page.on {display:inline-block; width:16px; height:16px; background-position: -16px 0;}
-.section_mtm2 .mtmConts01 {width: 100%; max-height: 990px; margin: 30px 0; background: url(../images/img_mtm01.png) 50% 50% no-repeat; background-size: cover;}
+.section_mtm2 {position: relative; background-size:cover;}
+.section_mtm2 .mtmConts01 {width: 100%; min-height: 990px; background: url(../images/img_mtm01.png) 50% 50% no-repeat; background-size: cover; overflow: hidden;}
 .section_mtm2 .mtmConts01 dl {margin-top: 280px; text-align: center; font-family:Heuristica,sans-serif; color: #fff;}
 .section_mtm2 .mtmConts01 dt {margin-bottom: 30px; font-size: 24px; line-height: 0.9em;}
 .section_mtm2 .mtmConts01 dd {font-size: 60px; line-height: 0.9em;}
-.section_mtm2 .mtmConts02 {position: relative; width: 100%; max-height: 990px; margin: 30px 0; background: url(../images/img_mtm02.png) 0 0 no-repeat;}
-.section_mtm2 .mtmConts02 h1 {position: absolute; left: 993px; top: 70px; padding-top: 30px; font-size: 60px; color: #000; font-weight: normal; letter-spacing: -1px; line-height: 0.9em;}
-.section_mtm2 .mtmConts02 h1:after {content: ""; position: absolute; left: 0; top: 0; background: #000; width: 50px; height: 2px;}
-.section_mtm2 .mtmConts02 .mtmGuide {position: absolute; left: 993px; top: 200px;}
-.section_mtm2 .mtmConts02 .mtmGuide dl {margin-bottom: 28px;}
-.section_mtm2 .mtmConts02 .mtmGuide dl:after {content: ""; display: block; clear: both;}
-.section_mtm2 .mtmConts02 .mtmGuide dt {float: left; width: 140px;}
-.section_mtm2 .mtmConts02 .mtmGuide dt p {display: inline-block; width: 100px; height: 120px; background: url(../images/icon_num.png) 0 0 no-repeat; font-size: 48px; color: #363636; text-align: center; line-height: 100px;}
-.section_mtm2 .mtmConts02 .mtmGuide dd {float: left; padding-top: 28px; color: #000;}
-.section_mtm2 .mtmConts02 .mtmGuide dd div {margin-bottom: 10px; font-size: 22px; line-height: 0.9em;}
-.section_mtm2 .mtmConts02 .mtmGuide dd p {font-size: 14px; color: #}
-.section_mtm2 .mtmConts03 .mcWrap {height: 1050px; background: #eee; overflow: hidden;}
-.section_mtm2 .mtmConts03 .mcWrap dl {width: 1200px; height: 420px; margin: 0 auto 30px; background: #fff;}
-.section_mtm2 .mtmConts03 .mcWrap dl:first-child {margin-top: 90px;}
-.section_mtm2 .mtmConts03 .mcWrap dl:after {content: ""; display: block; clear: both;}
-.section_mtm2 .mtmConts03 .mcWrap dt {float: left;}
-.section_mtm2 .mtmConts03 .mcWrap dd {float: left; padding: 90px 0 0 67px; color: #000;}
-.section_mtm2 .mtmConts03 .mcWrap dd div {position: relative; padding-bottom: 30px; font-size: 36px; line-height: 0.9em;}
-.section_mtm2 .mtmConts03 .mcWrap dd div:after {content: ""; position: absolute; left: 0; bottom: 0; background: #000; width: 50px; height: 2px;}
-.section_mtm2 .mtmConts03 .mcWrap dd p {margin-top: 25px; font-size: 18px; line-height: 28px;}
+.section_mtm2 .mtmConts01 .btn_more {position: absolute; left: 50%; bottom: 70px; display: inline-block; width: 268px; height: 68px; margin-left: -135px; border: 1px solid #ccc; font-size: 18px; color: #ccc; text-align: center; line-height: 70px;}
+
+.mtm_contain {width: 1800px; margin: 0 auto;}
+.mtm_contain .mtmConts02 {position: relative; width: 100%; min-height: 990px; margin: 30px 0; background: url(../images/img_mtm02.png) 0 0 no-repeat;}
+.mtm_contain .mtmConts02 h1 {position: absolute; left: 993px; top: 70px; padding-top: 30px; font-size: 60px; color: #000; font-weight: normal; letter-spacing: -1px; line-height: 0.9em;}
+.mtm_contain .mtmConts02 h1:after {content: ""; position: absolute; left: 0; top: 0; background: #000; width: 50px; height: 2px;}
+.mtm_contain .mtmConts02 .mtmGuide {position: absolute; left: 993px; top: 200px;}
+.mtm_contain .mtmConts02 .mtmGuide dl {margin-bottom: 28px;}
+.mtm_contain .mtmConts02 .mtmGuide dl:after {content: ""; display: block; clear: both;}
+.mtm_contain .mtmConts02 .mtmGuide dt {float: left; width: 140px;}
+.mtm_contain .mtmConts02 .mtmGuide dt p {display: inline-block; width: 100px; height: 120px; background: url(../images/icon_num.png) 0 0 no-repeat; font-size: 48px; color: #363636; text-align: center; line-height: 100px;}
+.mtm_contain .mtmConts02 .mtmGuide dd {float: left; padding-top: 28px; color: #000;}
+.mtm_contain .mtmConts02 .mtmGuide dd div {margin-bottom: 10px; font-size: 22px; line-height: 0.9em;}
+.mtm_contain .mtmConts02 .mtmGuide dd p {font-size: 14px;}
+.mtm_contain .mtmConts03 .mcWrap {height: 1050px; background: #eee; overflow: hidden;}
+.mtm_contain .mtmConts03 .mcWrap dl {width: 1200px; height: 420px; margin: 0 auto 30px; background: #fff;}
+.mtm_contain .mtmConts03 .mcWrap dl:first-child {margin-top: 90px;}
+.mtm_contain .mtmConts03 .mcWrap dl:after {content: ""; display: block; clear: both;}
+.mtm_contain .mtmConts03 .mcWrap dt {float: left;}
+.mtm_contain .mtmConts03 .mcWrap dd {float: left; padding: 90px 0 0 67px; color: #000;}
+.mtm_contain .mtmConts03 .mcWrap dd div {position: relative; padding-bottom: 30px; font-size: 36px; line-height: 0.9em;}
+.mtm_contain .mtmConts03 .mcWrap dd div:after {content: ""; position: absolute; left: 0; bottom: 0; background: #000; width: 50px; height: 2px;}
+.mtm_contain .mtmConts03 .mcWrap dd p {margin-top: 25px; font-size: 18px; line-height: 28px;}
 
 .section_collect {height: 1080px; background: #f4f3f1; overflow: hidden;}
 .section_collect .ctWrap {width: 1415px; margin: 0 auto;}
 .section_collect .ctWrap h1 {position: relative; margin-top: 80px; padding: 30px 0 0 105px; font-size: 36px; color: #363636; font-family:Heuristica,sans-serif; line-height: 0.9em;}
 .section_collect .ctWrap h1:after {content: ""; position: absolute; left: 105px; top: 0; width: 50px; height: 2px; background: #000;}
 .section_collect .ctWrap .list {position: relative; height: 840px; margin-top: -25px;}
-.section_collect .ctWrap .list div {position: absolute;}
-.section_collect .ctWrap .list div:nth-child(1) {left: 0; top: 285px; }
-.section_collect .ctWrap .list div:nth-child(1):hover p {height: 555px; line-height: 555px;}
-.section_collect .ctWrap .list div:nth-child(2) {left: 690px; top: 0;}
-.section_collect .ctWrap .list div:nth-child(2):hover p {height: 555px; line-height: 555px;}
-.section_collect .ctWrap .list div:nth-child(3) {left: 690px; top: 285px;}
-.section_collect .ctWrap .list div:nth-child(3):hover p {height: 555px; line-height: 555px;}
-.section_collect .ctWrap .list div:nth-child(4) {left: 1070px; top: 0;}
-.section_collect .ctWrap .list div:nth-child(4):hover p {height: 555px; line-height: 555px;}
-.section_collect .ctWrap .list div:nth-child(5) {left: 1070px; top: 570px;}
-.section_collect .ctWrap .list div:nth-child(5):hover p {height: 270px; line-height: 270px;}
-.section_collect .ctWrap .list div p {display: none;}
-.section_collect .ctWrap .list div:hover p {position: absolute; display:block; width: 100%; font-size: 32px; color: #fff; text-align: center; font-style: italic;}
-.section_collect .ctWrap .list div:hover p:after {content: ""; position: absolute; left: 50%; top: 250px; width: 30px; height: 2px; margin-left: -15px; background: #fff;}
-.section_collect .ctWrap .list div:nth-child(5):hover p:after {top: 105px;}
+.section_collect .ctWrap .list .img_m {display: none;}
+.section_collect .ctWrap .list .dir01 {position: absolute; left: 0; top: 285px;}
+.section_collect .ctWrap .list .dir01:hover p {height: 555px; width: 100%; background: linear-gradient(rgba(199,199,199,0.7), rgba(0,0,0,0.7)); line-height: 555px;}
+.section_collect .ctWrap .list .dir02 {position: absolute; left: 690px; top: 0;}
+.section_collect .ctWrap .list .dir02:hover p {height: 555px; width: 100%; background: linear-gradient(rgba(199,199,199,0.7), rgba(0,0,0,0.7)); line-height: 555px;}
+.section_collect .ctWrap .list .dir03 {position: absolute; left: 690px; top: 285px;}
+.section_collect .ctWrap .list .dir03:hover p {height: 555px; width: 100%; background: linear-gradient(rgba(199,199,199,0.7), rgba(0,0,0,0.7)); line-height: 555px;}
+.section_collect .ctWrap .list .dir04 {position: absolute; left: 1070px; top: 0;}
+.section_collect .ctWrap .list .dir04:hover p {height: 555px; width: 100%; background: linear-gradient(rgba(199,199,199,0.7), rgba(0,0,0,0.7)); line-height: 555px;}
+.section_collect .ctWrap .list .dir05 {position: absolute; left: 1070px; top: 570px;}
+.section_collect .ctWrap .list .dir05:hover p {height: 270px; width: 100%; background: linear-gradient(rgba(199,199,199,0.7), rgba(0,0,0,0.7)); line-height: 270px;}
+.section_collect .ctWrap .list .dir01 p,
+.section_collect .ctWrap .list .dir02 p,
+.section_collect .ctWrap .list .dir03 p,
+.section_collect .ctWrap .list .dir04 p,
+.section_collect .ctWrap .list .dir05 p {display: none;}
+.section_collect .ctWrap .list .dir01:hover p,
+.section_collect .ctWrap .list .dir02:hover p,
+.section_collect .ctWrap .list .dir03:hover p,
+.section_collect .ctWrap .list .dir04:hover p,
+.section_collect .ctWrap .list .dir05:hover p {position: absolute; display:block; width: 100%; font-size: 32px; color: #fff; text-align: center; font-style: italic;}
+.section_collect .ctWrap .list .dir01:hover p:after,
+.section_collect .ctWrap .list .dir02:hover p:after,
+.section_collect .ctWrap .list .dir03:hover p:after,
+.section_collect .ctWrap .list .dir04:hover p:after {content: ""; position: absolute; left: 50%; top: 250px; width: 30px; height: 2px; margin-left: -15px; background: #fff;}
+.section_collect .ctWrap .list .dir05:hover p:after {top: 105px;}
 
 .section_style {height: 990px; background: #fff; overflow: hidden;}
 .section_style .styWrap {width: 1200px; margin: 0 auto;}
@@ -290,6 +294,7 @@
 .section_social .list_social li {float:left;width:240px;height:320px;margin:0 30px;}
 .section_social .list_social .link_cont {display:block;position:relative;}
 .section_social .list_social .thumb_g {display:block;position:relative;width:240px;height:320px;}
+.section_social .list_social .thumb_g .img_m {display: none;}
 .section_social .list_social .thumb_g .ico_comm {position:absolute;top:10px;right:10px;width:24px;height:24px;}
 .section_social .list_social .thumb_g .ico_facebook1 {background-position:0 0}
 .section_social .list_social .thumb_g .ico_insta {background-position:-30px 0}
@@ -307,6 +312,7 @@
 .section_social .box_social .tit_cont1 {display:block;font-size:60px;line-height:1;font-family:Heuristica,sans-serif;}
 .section_social .box_social .tit_cont2 {display:block;margin-left:50px;font-size:60px;line-height:1;font-family:Heuristica,sans-serif;}
 .section_social .box_social .txt_cont {display:block; width: 515px; margin-left:50px;font-weight:300;font-size:24px;line-height:1.8;}
+#pagNav02 {display: none;}
 
 .shopContain {position: relative; margin-top: 70px; padding-bottom: 100px; height: auto; background: #fdfdfd; overflow: hidden;}
 .shopContain h3 {margin-top: 90px; font-size: 60px; font-family:Heuristica,sans-serif; font-weight: normal; color: #363636; text-align: center; line-height: 0.9em;}

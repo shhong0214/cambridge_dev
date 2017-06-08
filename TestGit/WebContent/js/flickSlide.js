@@ -2,6 +2,12 @@ $(document).ready(function() {
   
   $("#pagNav01").touchSlider({
     flexible : true,
+    autoplay : {
+        enable : true,
+        pauseHover : true,
+        addHoverTarget : "",
+        interval : 3000
+      },
     btn_prev : $("#pagNav01").next().find(".btn_prev"),
     btn_next : $("#pagNav01").next().find(".btn_next"),
     initComplete : function (e) {
